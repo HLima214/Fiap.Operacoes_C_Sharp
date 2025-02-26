@@ -39,7 +39,7 @@ namespace Fiap.Operacoes
 
                 //Operações relacionais
 
-                Console.WriteLine("\n Comparação entre números");
+                Console.WriteLine("\n  Comparação entre números");
                 Console.WriteLine($"Os números são iguais ? {num1 == num2}");
 
                 Console.WriteLine($"Os números são diferentes ? {num1 != num2}");
