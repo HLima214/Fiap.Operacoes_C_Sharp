@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,8 +53,17 @@ namespace Fiap.Operacoes
                 bool algumnegativo = (num1 <0 || num2 < 0);
 
                 Console.WriteLine($"Ambos positivos {ambosPositivos}");
-                Console.WriteLine($"Algum negativos {algumnegativo}");
+                Console.WriteLine($"Algum negativo {algumnegativo}");
 
+                if (Directory.Exists("D:/lima"))
+                {
+                    Console.WriteLine("Pasta existe");
+                }
+                else
+                {
+                    Console.WriteLine("Pasta não existe");
+                    Directory.CreateDirectory("D:/lima");
+                }
                 Console.Write("Digite qualquer coisa para sair");
             }
             catch(Exception ex)
